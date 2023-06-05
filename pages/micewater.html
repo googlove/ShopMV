@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopMV - Сторінка товару</title>
+  <link rel="icon" href="../images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo header__logo" href="../index.html">
+          <img class="logo__img" src="../images/logo.png" alt="logo" style: height="170px" width="170px";>
+        </a>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Головна</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="shop.html">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="blog.html">Блог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">Про нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contacts.html">Контакти</a>
+            </li>
+          </ul>
+          <button type="button" class="menu__btn"><span></span></button>
+        </nav>
+
+        <div class="user-nav header__nav">
+          <a class="user-nav__link" href="#">
+            <i class="fa fa-heart" aria-hidden="true"></i>
+            <span class="user-nav__num">4</span>
+          </a>
+          <a class="user-nav__link" href="#">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <span class="user-nav__num">1</span>
+          </a>
+          <a class="user-nav__link" href="login.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="product-page">
+      <div class="container">
+
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="../index.html">Головна</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="../shop.html">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="../pages/micewater.html">Міцелярна вода</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="product-page__inner">
+          <div class="product-page__slider">
+            <img class="product-page__image" src="../images/products/micewater.png" alt="туш" style="height: 450px; width: 170px;">
+            <img class="product-page__image" src="../images/products/micewater01.png" alt="туш" style="height: 450px; width: 170px;">
+            <img class="product-page__image" src="../images/products/stick03.png" alt="туш" style="height: 440px; width: 170px;">
+          </div>
+
+          <div class="product-page__content">
+            <h2 class="product-page__title">Міцелярна вода</h2>
+            <div class="product-page__rate">
+              <div class="product-page__star star" data-rateyo-rating="4.5"></div>
+              <span class="product-page__num">(2)</span>
+            </div>
+
+            <ul class="product-page__info">
+              <li class="product-page__row">
+                <span class="product-page__descr">Ціна:</span>
+                <span class="product-page__sum">155 ₴</span>
+              </li>
+
+              <li class="product-page__row">
+                <span class="product-page__descr">Стара ціна:</span>
+                <span class="product-page__sum product-page__sum--old">310 ₴</span>
+              </li>
+
+              <li class="product-page__row">
+                <span class="product-page__descr">Номер</span>
+                <span class="product-page__text">BXM9212BX</span>
+              </li>
+
+              <li class="product-page__row">
+                <span class="product-page__descr">Категорія</span>
+                <a class="product-page__link" href="#">Макіяж</a>
+              </li>
+
+              <li class="product-page__row">
+                <span class="product-page__descr">Поділитися</span>
+                <ul class="product-page__item networks">
+                  <li class="networks__item">
+                    <a class="networks__link" href="#">
+                      <svg class="networks__icon">
+                        <use xlink:href="images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks__item">
+                    <a class="networks__link" href="#">
+                      <svg class="networks__icon">
+                        <use xlink:href="images/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks__item">
+                    <a class="networks__link" href="#">
+                      <svg class="networks__icon">
+                        <use xlink:href="images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+              </li>
+            </ul>
+
+            <form class="product-page__form" action="https://t.me/M_a_R_i_N_e_B_r_O">
+              <input class="product-page__num" type="number" value="1" min="1">
+              <a class="telegram-link" href="Купити">
+                <button class="product-page__btn" type="submit">Купити</button></a>
+
+            </form>
+          </div>
+        </div>
+
+        <div class="product-tabs">
+          <div class="product-tabs__head">
+            <a class="product-tabs__name product-tabs__name--active" href="#tab-1">Опис</a>
+            <a class="product-tabs__name" href="#tab-2">Застосування</a>
+            <a class="product-tabs__name" href="#tab-3">Відгуки</a>
+          </div>
+
+          <div class="product-tabs__content">
+            <div class="product-tabs__item product-tabs__item--active" id="tab-1">
+              <div class="product-tabs__descr">
+                <p>
+                  Міцелярна вода - це мультифункціональний засіб для очищення і догляду за шкірою обличчя. 
+                  Цей продукт має легку, безалкогольну формулу, що містить міцелі - маленькі молекули, які притягують і видаляють забруднення та макіяж з поверхні шкіри, не залишаючи відчуття липкості або жирності.
+                </p>
+                <p>
+                  Міцелярна вода надає дуже ефективне очищення, видаляючи забруднення, себум (шкірний жир) та макіяж, включаючи водостійкий. Вона допомагає збалансувати шкіру, не пересушуючи її, та забезпечує відчуття свіжості та чистоти.
+                </p>
+                <p>
+                  Міцелярна вода також має зволожуючі та заспокійливі властивості, завдяки яким підходить для всіх типів шкіри, включаючи чутливу. 
+                  Вона не вимагає змивання водою, що робить її чудовим варіантом для швидкого й ефективного очищення в будь-який час і в будь-якому місці.
+                  Застосовуйте міцелярну воду, зволожуючи ватний диск і ніжними рухами очищайте шкіру обличчя. 
+                  Вона підготовляє шкіру до подальших кроків у догляді за шкірою, а також може використовуватися для освіження шкіри протягом дня.
+
+                  Міцелярна вода - це незамінний продукт для шкірного догляду, який дарує вам чисту, зволожену та свіжу шкіру з легкістю та зручністю.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-tabs__item" id="tab-2">
+              <div class="product-tabs__descr">
+                <p>
+                  Міцелярна вода має багато застосувань у шкірному догляді. Ось декілька способів, які можна використовувати міцелярну воду:
+                </p>
+                <p>
+                  1.Очищення обличчя: Нанесіть міцелярну воду на ватний диск і пройдіться ним по обличчю, щоб видалити забруднення, надлишки шкірного жиру та макіяж.
+                   Вона дозволяє ефективно очистити шкіру без потреби води.
+                  &nbsp;
+                  2.Видалення макіяжу: Міцелярна вода добре видаляє різні типи макіяжу, включаючи тональний крем, помаду, тіні для повік та туш для вій. 
+                  Застосовуйте її на ватний диск і аккуратно очищайте обличчя.
+                  &nbsp;
+                  &nbsp;
+                  3.Переключення макіяжу: Якщо вам потрібно змінити макіяжний вигляд, ви можете використовувати міцелярну воду, щоб швидко й ефективно видалити попередній макіяж та підготувати шкіру до наступного нанесення.
+                  &nbsp;
+                  4.Освіження шкіри: Під час дня ви можете використовувати міцелярну воду, щоб освіжити свою шкіру та видалити надлишки шкірного жиру. 
+                  5.Просто протріть обличчя ватним диском з міцелярною водою, щоб відчути свіжість.
+                  Поправлення помилок макіяжу: Якщо ви зробили помилку під час нанесення макіяжу, міцелярна вода може бути використана для швидкого виправлення. 
+                  Застосуйте її на ватний диск і аккуратно видаліть неправильно нанесену частину макіяжу.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-tabs__item" id="tab-3">
+              <div class="comments">
+                <div class="comment">
+                  <div class="comment__top">
+                    <span class="comment__author">Диана К.</span>
+                    <span class="comment__date">15.03.2021</span>
+                    <div class="comment__star star" data-rateyo-rating="4.5"></div>
+                  </div>
+                  <p class="comment__text">
+                    По колористике палетка шикарная! Правда, коричневые оттенки рыжат, но мне норм) оттенки на все
+                    случаи
+                    жизни.
+                  </p>
+                </div>
+
+                <div class="comment">
+                  <div class="comment__top">
+                    <span class="comment__author">Полина</span>
+                    <span class="comment__date">12.01.2021</span>
+                    <div class="comment__star star" data-rateyo-rating="5"></div>
+                  </div>
+                  <p class="comment__text">
+                    палетка очень крутая, подарила на день рождение подруга. классная пигментация ставлю лайк
+                  </p>
+                </div>
+
+                <form class="comment-form" action="#">
+                  <span class="comment-form__title">Оставить свой отзыв</span>
+
+                  <div class="comment-form__inputs">
+                    <input class="comment-form__input" type="text" placeholder="Имя">
+                    <input class="comment-form__input" type="text" placeholder="Email">
+                  </div>
+                  <textarea class="comment-form__textarea" placeholder="Комментарий"></textarea>
+
+                  <div class="comment-form__rate">
+                    <span class="comment-form__descr">Ваша оценка:</span>
+                    <div class="comment-form__star" data-rateyo-rating="5"></div>
+                  </div>
+
+                  <button class="comment-form__btn" type="submit">Оставить отзыв</button>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <section class="related">
+      <div class="container">
+        <h2 class="title related__title">Рекомендовані товари</h2>
+        <div class="related__items">
+
+          <div class="product-card product-card--sale">
+            <a class="product-card__link" href="../pages/spray.html">
+              <img class="product-card__images" src="../images/products/spray3.png" alt="product" >
+            </a>
+
+            <a class="product-card__title-link" href="../pages/spray.html">
+              <h3 class="product-card__title">Спрей термозахист "Top Beauty" </h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="4.3"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">180 ₴</span>
+              <span class="product-card__sum product-card__sum--old">370 ₴</span>
+            </div>
+          </div>
+
+          <div class="product-card product-card--sale">
+            <a class="product-card__link" href="../pages/showergel.html">
+              <img class="product-card__images" src="../images/products/shower.jpg" alt="product" >
+            </a>
+
+            <a class="product-card__title-link" href="../pages/showergel.html">
+              <h3 class="product-card__title">Пінка для душа "Bilou" </h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="4.3"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">300 ₴</span>
+              <span class="product-card__sum product-card__sum--old">600 ₴</span>
+            </div>
+          </div>
+
+  <div class="product-card product-card--sale">
+            <a class="product-card__link" href="../pages/deodorant.html">
+              <img class="product-card__images" src="../images/products/dez.png" alt="product">
+            </a>
+
+            <a class="product-card__title-link" href="../pages/deodorant.html">
+              <h3 class="product-card__title">Дезодорант спрей "Bilou" Candy/Meadow </h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="4.3"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">250 ₴</span>
+              <span class="product-card__sum product-card__sum--old">500 ₴</span>
+            </div>
+          </div>
+ 
+
+          <div class="product-card product-card--sale">
+            <a class="product-card__link" href="../pages/cream.html">
+              <img class="product-card__images" src="../images/products/cream.png" alt="product" >
+            </a>
+
+            <a class="product-card__title-link" href="../pages/cream.html">
+              <h3 class="product-card__title">Крем для обличчя, зволожуючий </h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="4.3"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">160 ₴</span>
+              <span class="product-card__sum product-card__sum--old">320 ₴</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <address class="footer-top__column footer-top__column--main">
+          <a class="logo footer-top__logo" href="#">
+            <img class="logo__img" src="../images/logo.png" alt="logo" style: height="160px" width="160px";>
+          </a>
+          <span class="footer-top__link">Україна, Київська область</span>
+          <a class="footer-top__link" href="mailto:shopmv23@gmail.com">
+            shopmv23@gmail.com
+          </a>
+          <a class="footer-top__link" href="tel:380986325727">
+            +3809863257272
+          </a>
+          <a class="footer-top__link" href="https://t.me/M_a_R_i_N_e_B_r_O">
+            <i class="fa fa-telegram" aria-hidden="true"></i> Є питання?
+          </a>
+
+          <ul class="footer-top__networks networks">
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </address>
+
+        <div class="footer-top__column">
+          <h6 class="footer-top__title">Покупцеві</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Про магазин</a>
+              <a class="footer-top__link" href="#">Контакти</a>
+              <a class="footer-top__link" href="#">Оплата</a>
+              <a class="footer-top__link" href="#">Доставка</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__column">
+          <h6 class="footer-top__title">Аккаунт</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Мій акаунт</a>
+              <a class="footer-top__link" href="#">Мій кошик</a>
+              <a class="footer-top__link" href="#">Вибране</a>
+              <a class="footer-top__link" href="#">Реєстрація</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__column footer-top__column--sub">
+          <h6 class="footer-top__title">Підпишись на розсилку</h6>
+          <p class="footer-top__text">
+            Будь у курсі останніх новинок та акцій
+          </p>
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__input" type="email" placeholder="Email" required>
+            <button class="footer-top__btn" type="submit">Підписатись</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">© 2023 ShopMV. Всі права захищені.</p>
+        <div class="footer-bottom__accept">
+          Ми приймаємо
+          <img class="footer-bottom__img" src="../images/pay/mastercard.png" alt="ми приймаємо mastercard">
+          <img class="footer-bottom__img" src="../images/pay/visa.png" alt="ми приймаємо visa">
+          <img class="footer-bottom__img" src="../images/pay/paypal.png" alt="ми приймаємо paypal">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../js/script.min.js"></script>
+</body>
+
+</html>

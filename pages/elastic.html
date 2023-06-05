@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopMV - Сторінка товару</title>
+  <link rel="icon" href="../images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo header__logo" href="../index.html">
+          <img class="logo__img" src="../images/logo.png" alt="logo" style: height="170px" width="170px";>
+        </a>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Головна</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="shop.html">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="blog.html">Блог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">Про нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contacts.html">Контакти</a>
+            </li>
+          </ul>
+          <button type="button" class="menu__btn"><span></span></button>
+        </nav>
+
+        <div class="user-nav header__nav">
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#heart"></use>
+            </svg>
+            <span class="user-nav__num">4</span>
+          </a>
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#cart"></use>
+            </svg>
+            <span class="user-nav__num">1</span>
+          </a>
+          <a class="user-nav__link" href="login.html">
+            <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#user"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="product-page">
+      <div class="container">
+
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="../index.html">Головна</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="../shop.html">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="../pages/elastic.html">Резинка ромашка</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="product-page__inner">
+          <div class="product-page__slider">
+            <img class="product-page__image" src="../images/products/romashka.jpg" alt="туш" style="height: 350px; width: 170px;">
+            <img class="product-page__image" src="../images/products/romashka1.jpg" alt="туш" style="height: 350px; width: 170px;">
+            <img class="product-page__image" src="../images/products/romashka2.jpg" alt="туш" style="height: 350px; width: 170px;">
+            <img class="product-page__image" src="../images/products/romashka3.jpg" alt="туш" style="height: 350px; width: 170px;">
+            <img class="product-page__image" src="../images/products/romashka4.jpg" alt="туш" style="height: 350px; width: 170px;">
+
+           </div>
+
+          <div class="product-page__content">
+            <h2 class="product-page__title">Резинка ромашка</h2>
+            <div class="product-page__rate">
+              <div class="product-page__star star" data-rateyo-rating="4.5"></div>
+              <span class="product-page__num">(2)</span>
+            </div>
+
+            <ul class="product-page__info">
+              <li class="product-page__row">
+                <span class="product-page__descr">Ціна:</span>
+                <span class="product-page__sum">15 ₴</span>
+              </li>
+
+              <li class="product-page__row">
+                <span class="product-page__descr">Стара ціна:</span>
+                <span class="product-page__sum product-page__sum--old">30 ₴</span>
+              </li>
+
+              <li class="product-page__row">
+                <span class="product-page__descr">Номер</span>
+                <span class="product-page__text">BXM9212BX</span>
+              </li>
+
+              <li class="product-page__row">
+                <span class="product-page__descr">Категорія</span>
+                <a class="product-page__link" href="#">Макіяж</a>
+              </li>
+
+              <li class="product-page__row">
+                <span class="product-page__descr">Поділитися</span>
+                <ul class="product-page__item networks">
+                  <li class="networks__item">
+                    <a class="networks__link" href="#">
+                      <svg class="networks__icon">
+                        <use xlink:href="images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks__item">
+                    <a class="networks__link" href="#">
+                      <svg class="networks__icon">
+                        <use xlink:href="images/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="networks__item">
+                    <a class="networks__link" href="#">
+                      <svg class="networks__icon">
+                        <use xlink:href="images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
+              </li>
+            </ul>
+
+            <form class="product-page__form" action="#">
+              <input class="product-page__num" type="number" value="1" min="1">
+              <a class="telegram-link" href="https://t.me/M_a_R_i_N_e_B_r_O">
+                <button class="product-page__btn" type="submit">Купити</button></a>
+
+            </form>
+          </div>
+        </div>
+
+        <div class="product-tabs">
+          <div class="product-tabs__head">
+            <a class="product-tabs__name product-tabs__name--active" href="#tab-1">Опис</a>
+            <a class="product-tabs__name" href="#tab-2">Застосування</a>
+            <a class="product-tabs__name" href="#tab-3">Відгуки</a>
+          </div>
+
+          <div class="product-tabs__content">
+            <div class="product-tabs__item product-tabs__item--active" id="tab-1">
+              <div class="product-tabs__descr">
+                <p>
+                  Туш для вій Wild - ваш ключ до виразних і дико привабливих очей.
+                </p>
+                <p>
+                  Завдяки своїй інноваційній формулі та спеціально розробленій щіточці, ця туш додасть вашим віям об'єму, довжини і інтенсивного чорного кольору.
+                </p>
+                <p>
+                  Вам не знадобиться жодного макіяжного фільтру, оскільки кожна ваша вія буде виділятися і притягувати увагу своїм диким обсягом. 
+                  Збережіть своє дике обличчя і покоріть світ своїми віями за допомогою Туші для вій Wild.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-tabs__item" id="tab-2">
+              <div class="product-tabs__descr">
+                <p>
+                  Туш для вій Wild - ідеальний вибір для створення сміливого і виразного вигляду. 
+                </p>
+                <p>
+                  Природний обсяг: Нанесіть легкий шар Туші для вій Wild для створення природного обсягу.
+                  &nbsp; Вона розділить і підкреслить ваші вії, додаючи їм легкості і природного вигляду.
+                  &nbsp;
+                  Захоплюючий обсяг: Якщо ви бажаєте ефекту "вау", нанесіть кілька шарів Туші для вій Wild, зосереджуючись на коренях і роблячи рухи з віями до кінчиків.
+                  &nbsp; Це додасть максимальний обсяг і зробить ваші вії виразними і вражаючими.
+                  &nbsp;
+                  Інтенсивний чорний колір: Формула Туші для вій Wild має насичений чорний колір, який додасть глибини і виразності вашим очам. 
+                  &nbsp;Колір залишиться на місці протягом усього дня, додаючи вашому макіяжу драматичного ефекту.
+                  &nbsp;
+                  Витончений спрейс: Використовуйте щіточку Туші для вій Wild для детального нанесення на зовнішні кути вій, створюючи витончений спрейс ефект.
+                  &nbsp; Це додасть вашому погляду загадковості і чарівності.
+                </p>
+              </div>
+            </div>
+
+            <div class="product-tabs__item" id="tab-3">
+              <div class="comments">
+                <div class="comment">
+                  <div class="comment__top">
+                    <span class="comment__author">Диана К.</span>
+                    <span class="comment__date">15.03.2021</span>
+                    <div class="comment__star star" data-rateyo-rating="4.5"></div>
+                  </div>
+                  <p class="comment__text">
+                    По колористике палетка шикарная! Правда, коричневые оттенки рыжат, но мне норм) оттенки на все
+                    случаи
+                    жизни.
+                  </p>
+                </div>
+
+                <div class="comment">
+                  <div class="comment__top">
+                    <span class="comment__author">Полина</span>
+                    <span class="comment__date">12.01.2021</span>
+                    <div class="comment__star star" data-rateyo-rating="5"></div>
+                  </div>
+                  <p class="comment__text">
+                    палетка очень крутая, подарила на день рождение подруга. классная пигментация ставлю лайк
+                  </p>
+                </div>
+
+                <form class="comment-form" action="#">
+                  <span class="comment-form__title">Оставить свой отзыв</span>
+
+                  <div class="comment-form__inputs">
+                    <input class="comment-form__input" type="text" placeholder="Имя">
+                    <input class="comment-form__input" type="text" placeholder="Email">
+                  </div>
+                  <textarea class="comment-form__textarea" placeholder="Комментарий"></textarea>
+
+                  <div class="comment-form__rate">
+                    <span class="comment-form__descr">Ваша оценка:</span>
+                    <div class="comment-form__star" data-rateyo-rating="5"></div>
+                  </div>
+
+                  <button class="comment-form__btn" type="submit">Оставить отзыв</button>
+
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <section class="related">
+      <div class="container">
+        <h2 class="title related__title">Рекомендовані товари</h2>
+        <div class="related__items">
+
+          <div class="product-card product-card--sale">
+            <a class="product-card__link" href="#">
+              <img class="product-card__images" src="images/products/s1.webp" alt="product">
+            </a>
+
+            <div class="product-card__buttons">
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+              </button>
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#heart"></use>
+                </svg>
+              </button>
+            </div>
+
+            <a class="product-card__title-link" href="#">
+              <h3 class="product-card__title">Маска стік, аромат зелений чай</h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="4.5"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">120 ₴</span>
+              <span class="product-card__sum product-card__sum--old">280 ₴</span>
+            </div>
+          </div>
+
+          <div class="product-card product-card--sale">
+            <a class="product-card__link" href="#">
+              <img class="product-card__images" src="images/products/s2.webp" alt="product">
+            </a>
+
+            <div class="product-card__buttons">
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+              </button>
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#heart"></use>
+                </svg>
+              </button>
+            </div>
+
+            <a class="product-card__title-link" href="#">
+              <h3 class="product-card__title">Матирующая компактная пудра CLARINS Ever Matte</h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="5"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">2800 ₽</span>
+              <span class="product-card__sum product-card__sum--old">3100 ₽</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <img class="product-card__images" src="images/products/3.webp" alt="product">
+            </a>
+
+            <div class="product-card__buttons">
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+              </button>
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#heart"></use>
+                </svg>
+              </button>
+            </div>
+
+            <a class="product-card__title-link" href="#">
+              <h3 class="product-card__title">Жидкие румяна NARS</h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="4"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">2399 ₽</span>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <a class="product-card__link" href="#">
+              <img class="product-card__images" src="images/products/4.webp" alt="product">
+            </a>
+
+            <div class="product-card__buttons">
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+              </button>
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#heart"></use>
+                </svg>
+              </button>
+            </div>
+
+            <a class="product-card__title-link" href="#">
+              <h3 class="product-card__title">Средство для дневного ухода за кожей PAYOT My Payot Jour</h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="4"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">2150 ₽</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <address class="footer-top__column footer-top__column--main">
+          <a class="logo footer-top__logo" href="#">
+            <img class="logo__img" src="../images/logo.png" alt="logo" style: height="160px" width="160px";>
+          </a>
+          <span class="footer-top__link">Україна, Київська область</span>
+          <a class="footer-top__link" href="mailto:shopmv23@gmail.com">
+            shopmv23@gmail.com
+          </a>
+          <a class="footer-top__link" href="tel:380986325727">
+            +3809863257272
+          </a>
+          <a class="footer-top__link" href="https://t.me/M_a_R_i_N_e_B_r_O">
+            <i class="fa fa-telegram" aria-hidden="true"></i> Є питання?
+          </a>
+
+          <ul class="footer-top__networks networks">
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+
+        <div class="footer-top__column">
+          <h6 class="footer-top__title">Покупцеві</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Про магазин</a>
+              <a class="footer-top__link" href="#">Контакти</a>
+              <a class="footer-top__link" href="#">Оплата</a>
+              <a class="footer-top__link" href="#">Доставка</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__column">
+          <h6 class="footer-top__title">Аккаунт</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Мій акаунт</a>
+              <a class="footer-top__link" href="#">Мій кошик</a>
+              <a class="footer-top__link" href="#">Вибране</a>
+              <a class="footer-top__link" href="#">Реєстрація</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__column footer-top__column--sub">
+          <h6 class="footer-top__title">Підпишись на розсилку</h6>
+          <p class="footer-top__text">
+            Будь у курсі останніх новинок та акцій
+          </p>
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__input" type="email" placeholder="Email" required>
+            <button class="footer-top__btn" type="submit">Підписатись</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">© 2023 ShopMV. Всі права захищені.</p>
+        <div class="footer-bottom__accept">
+          Ми приймаємо
+          <img class="footer-bottom__img" src="../images/pay/mastercard.png" alt="ми приймаємо mastercard">
+          <img class="footer-bottom__img" src="../images/pay/visa.png" alt="ми приймаємо visa">
+          <img class="footer-bottom__img" src="../images/pay/paypal.png" alt="ми приймаємо paypal">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../js/script.min.js"></script>
+</body>
+
+</html>

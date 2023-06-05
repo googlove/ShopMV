@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>❤️ShopMV</title>
+  <link rel="icon" href="images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo header__logo" href="index.html">
+          <img class="logo__img" src="images/logo.png" alt="logo" style: height="170px" width="170px";>
+        </a>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="index.html">Головна</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="shop.html">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="blog.html">Блог</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">Про нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contacts.html">Контакти</a>
+            </li>
+          </ul>
+          <button type="button" class="menu__btn"><span></span></button>
+        </nav>
+
+        <div class="user-nav header__nav">
+          <a class="user-nav__link" href="#">
+            <i class="fa fa-heart" aria-hidden="true"></i>
+            <span class="user-nav__num">4</span>
+          </a>
+          <a class="user-nav__link" href="#">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <span class="user-nav__num">1</span>
+          </a>
+          <a class="user-nav__link" href="login.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main class="main">
+    <h1 class="sr-only">ShopMV - Магазин косметики</h1>
+
+    <section class="main-slider">
+      <div class="container">
+        <div class="main-slider__inner">
+
+          <div class="main-slider__item">
+            <div class="main-slider__content">
+              <h2 class="main-slider__title">
+                Нова літня колекція
+              </h2>
+              <p class="main-slider__text">
+                Настав час спробувати щось нове для себе
+              </p>
+              <a class="main-slider__link" href="#">Купити</a>
+            </div>
+            <img class="main-slider__img" src="images/head-slider/slide1.jpg" alt="slide image">
+          </div>
+
+          <div class="main-slider__item">
+            <div class="main-slider__content">
+              <h2 class="main-slider__title">
+                Подарунковий набір MAC
+              </h2>
+              <p class="main-slider__text">
+                Порадуй своїх близьких новою косметикою
+              </p>
+              <a class="main-slider__link" href="#">Купити</a>
+            </div>
+            <img class="main-slider__img" src="images/head-slider/slide2.jpg" alt="slide image">
+          </div>
+
+          <div class="main-slider__item">
+            <div class="main-slider__content">
+              <h2 class="main-slider__title">
+                Спеціальна пропозиція
+              </h2>
+              <p class="main-slider__text">
+                Зібрали все найпотрібніше в один набір
+              </p>
+              <a class="main-slider__link" href="#">Купити</a>
+            </div>
+            <img class="main-slider__img" src="images/head-slider/slide3.jpg" alt="slide image">
+          </div>
+
+          <div class="main-slider__item">
+            <div class="main-slider__content">
+              <h2 class="main-slider__title">
+                Найкраща ціна
+              </h2>
+              <p class="main-slider__text">
+                Одна з найкращих пропозицій для тебе
+              </p>
+              <a class="main-slider__link" href="#">Купити</a>
+            </div>
+            <img class="main-slider__img" src="images/head-slider/slide4.jpg" alt="slide image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <h2 class="title categories__title">Популярні категорії</h2>
+        <div class="categories__items">
+          <a class="categories__item categories__item--big" style="background-image: url('images/categories/body.jpg')"
+            href="#">
+            <span class="categories__name">Для тіла</span>
+          </a>
+
+          <a class="categories__item" style="background-image: url('images/categories/face.jpg')" href="#">
+            <span class="categories__name">Для обличчя</span>
+          </a>
+
+          <a class="categories__item categories__item--big" style="background-image: url('images/categories/hair.jpg')"
+            href="#">
+            <span class="categories__name">Для волосся</span>
+          </a>
+
+          <a class="categories__item" style="background-image: url('images/categories/makeup.jpg')" href="#">
+            <span class="categories__name">Макіяж</span>
+          </a>
+        </div>
+        <a class="categories__link" href="shop.html">Усі категорії</a>
+      </div>
+    </section>
+
+    <section class="product">
+      <div class="container">
+        <h2 class="title">Популярні товари</h2>
+        <div class="product__items">
+
+          <div class="product-card">
+            <a class="product-card__link" href="product.html">
+              <img class="product-card__images" src="images/products/tush01.png" alt="product">
+            </a>
+
+            <div class="product-card__buttons">
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+              </button>
+              <button class="product-card__btn" type="button">
+                <svg class="product-card__icon">
+                  <use xlink:href="images/sprite.svg#heart"></use>
+                </svg>
+              </button>
+            </div>
+
+            <a class="product-card__title-link" href="product.html">
+              <h3 class="product-card__title">Туш для вій Wild</h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="5"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">100 ₴</span>
+            </div>
+          </div>
+
+          <div class="product-card product-card--sale">
+            <a class="product-card__link" href="/pages/olive.html">
+              <img class="product-card__images" src="images/products/olive.png" alt="product" >
+            </a>
+
+            <a class="product-card__title-link" href="/pages/olive.html">
+              <h3 class="product-card__title">Маска для обличчя (олива) </h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="4.3"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">25 ₴</span>
+              <span class="product-card__sum product-card__sum--old">50 ₴</span>
+            </div>
+          </div>
+       
+
+            <div class="product-card product-card--sale">
+              <a class="product-card__link" href="/pages/lavander.html">
+                <img class="product-card__images" src="images/products/lavander.png" alt="product" >
+              </a>
+  
+              <a class="product-card__title-link" href="/pages/lavander.html">
+                <h3 class="product-card__title">Маска для обличчя (лаванда) </h3>
+              </a>
+              <div class="product-card__star star" data-rateyo-rating="4.3"></div>
+              <div class="product-card__price">
+                <span class="product-card__sum">25 ₴</span>
+                <span class="product-card__sum product-card__sum--old">50 ₴</span>
+              </div>
+            </div>
+          
+    
+
+            <div class="product-card product-card--sale">
+              <a class="product-card__link" href="/pages/spray.html">
+                <img class="product-card__images" src="images/products/spray3.png" alt="product" >
+              </a>
+  
+              <a class="product-card__title-link" href="/pages/spray.html">
+                <h3 class="product-card__title">Спрей термозахист "Top Beauty" </h3>
+              </a>
+              <div class="product-card__star star" data-rateyo-rating="4.3"></div>
+              <div class="product-card__price">
+                <span class="product-card__sum">180 ₴</span>
+                <span class="product-card__sum product-card__sum--old">370 ₴</span>
+              </div>
+            </div>
+
+            <div class="product-card product-card--sale">
+              <a class="product-card__link" href="/pages/showergel.html">
+                <img class="product-card__images" src="images/products/shower.jpg" alt="product" >
+              </a>
+  
+              <a class="product-card__title-link" href="/pages/showergel.html">
+                <h3 class="product-card__title">Пінка для душа "Bilou" </h3>
+              </a>
+              <div class="product-card__star star" data-rateyo-rating="4.3"></div>
+              <div class="product-card__price">
+                <span class="product-card__sum">300 ₴</span>
+                <span class="product-card__sum product-card__sum--old">600 ₴</span>
+              </div>
+            </div>
+
+    <div class="product-card product-card--sale">
+              <a class="product-card__link" href="/pages/deodorant.html">
+                <img class="product-card__images" src="images/products/dez.png" alt="product" style: height="440px" width="280px">
+              </a>
+  
+              <a class="product-card__title-link" href="/pages/deodorant.html">
+                <h3 class="product-card__title">Дезодорант спрей "Bilou" Candy/Meadow </h3>
+              </a>
+              <div class="product-card__star star" data-rateyo-rating="4.3"></div>
+              <div class="product-card__price">
+                <span class="product-card__sum">250 ₴</span>
+                <span class="product-card__sum product-card__sum--old">500 ₴</span>
+              </div>
+            </div>
+   
+
+            <div class="product-card product-card--sale">
+              <a class="product-card__link" href="/pages/cream.html">
+                <img class="product-card__images" src="images/products/cream.png" alt="product" >
+              </a>
+  
+              <a class="product-card__title-link" href="/ShopMV/pages/cream.html">
+                <h3 class="product-card__title">Крем для обличчя, зволожуючий </h3>
+              </a>
+              <div class="product-card__star star" data-rateyo-rating="4.3"></div>
+              <div class="product-card__price">
+                <span class="product-card__sum">160 ₴</span>
+                <span class="product-card__sum product-card__sum--old">320 ₴</span>
+              </div>
+            </div>
+
+        </div>
+        <a class="product__link" href="#">Дивитися більше</a>
+      </div>
+    </section>
+
+    <section class="product product--repeat">
+      <div class="container">
+        <h2 class="title">Товари зі знижкою</h2>
+        <div class="product__items">
+
+          <div class="product-card">
+            <a class="product-card__link" href="pages/foundation.html">
+              <img class="product-card__images" src="images/products/smooth.png" alt="product">
+            </a>
+
+            <a class="product-card__title-link" href="/pages/foundation.html">
+              <h3 class="product-card__title">Тональний крем "Senana". Тон 4.</h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="5"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">130 ₴</span>
+              <span class="product-card__sum product-card__sum--old">260 ₴</span>
+            </div>
+          </div>
+
+          <div class="product-card product-card--sale">
+            <a class="product-card__link" href="pages/lipsize.html">
+              <img class="product-card__images" src="images/products/lipsize.jpg" alt="product" >
+            </a>
+
+            
+
+            <a class="product-card__title-link" href="pages/stick.html">
+              <h3 class="product-card__title">Маска збільшення губ</h3>
+            </a>
+            <div class="product-card__star star" data-rateyo-rating="4.5"></div>
+            <div class="product-card__price">
+              <span class="product-card__sum">120 ₴</span>
+              <span class="product-card__sum product-card__sum--old">240 ₴</span>
+            </div>
+          </div>
+
+          
+           
+
+            <div class="product-card product-card--sale">
+              <a class="product-card__link" href="pages/patches.html">
+                <img class="product-card__images" src="images/products/lips.png" alt="product" >
+              </a>
+  
+              
+  
+              <a class="product-card__title-link" href="pages/patches.html">
+                <h3 class="product-card__title">Патчі для губ Bioaqua (чорниця)</h3>
+              </a>
+              <div class="product-card__star star" data-rateyo-rating="4.5"></div>
+              <div class="product-card__price">
+                <span class="product-card__sum">20 ₴</span>
+                <span class="product-card__sum product-card__sum--old">40 ₴</span>
+              </div>
+            </div>
+  
+            
+              
+
+              <div class="product-card product-card--sale">
+                <a class="product-card__link" href="pages/grapefruit.html">
+                  <img class="product-card__images" src="images/products/lips_g01.png" alt="product" >
+                </a>
+    
+               
+    
+                <a class="product-card__title-link" href="pages/grapefruit.html">
+                  <h3 class="product-card__title">Патчі для губ Bioaqua (грейпфрут)</h3>
+                </a>
+                <div class="product-card__star star" data-rateyo-rating="4.4"></div>
+                <div class="product-card__price">
+                  <span class="product-card__sum">20 ₴</span>
+                  <span class="product-card__sum product-card__sum--old">40 ₴</span>
+                </div>
+              </div>
+    
+              
+              
+
+                <div class="product-card product-card--sale">
+                  <a class="product-card__link" href="pages/lime.html">
+                    <img class="product-card__images" src="images/products/lips_l01.png" alt="product" >
+                  </a>
+      
+                 
+      
+                  <a class="product-card__title-link" href="pages/lime.html">
+                    <h3 class="product-card__title">Патчі для губ Bioaqua (лайм) </h3>
+                  </a>
+                  <div class="product-card__star star" data-rateyo-rating="4.3"></div>
+                  <div class="product-card__price">
+                    <span class="product-card__sum">20 ₴</span>
+                    <span class="product-card__sum product-card__sum--old">40 ₴</span>
+                  </div>
+                </div>
+              
+
+
+                  <div class="product-card product-card--sale">
+                    <a class="product-card__link" href="pages/pencil.html">
+                      <img class="product-card__images" src="images/products/pencil.jpg" alt="product" >
+                    </a>
+        
+                    <a class="product-card__title-link" href="pages/pencil.html">
+                      <h3 class="product-card__title">Олівець для губ</h3>
+                    </a>
+                    <div class="product-card__star star" data-rateyo-rating="4.3"></div>
+                    <div class="product-card__price">
+                      <span class="product-card__sum">26 ₴</span>
+                      <span class="product-card__sum product-card__sum--old">52 ₴</span>
+                    </div>
+                  </div>
+               
+
+                    <div class="product-card product-card--sale">
+                      <a class="product-card__link" href="pages/rubber.html">
+                        <img class="product-card__images" src="images/products/barrette.jpg" alt="product" >
+                      </a>
+          
+                      <a class="product-card__title-link" href="pages/rubber.html">
+                        <h3 class="product-card__title">Краб каучук кольоровий</h3>
+                      </a>
+                      <div class="product-card__star star" data-rateyo-rating="4.3"></div>
+                      <div class="product-card__price">
+                        <span class="product-card__sum">37 ₴</span>
+                        <span class="product-card__sum product-card__sum--old">74 ₴</span>
+                      </div>
+                    </div>
+                  
+            
+
+                    <div class="product-card product-card--sale">
+                      <a class="product-card__link" href="pages/elastic.html">
+                        <img class="product-card__images" src="images/products/romashka.jpg" alt="product" >
+                      </a>
+          
+                      <a class="product-card__title-link" href="pages/elastic.html">
+                        <h3 class="product-card__title">Резинка ромашка</h3>
+                      </a>
+                      <div class="product-card__star star" data-rateyo-rating="4.5"></div>
+                      <div class="product-card__price">
+                        <span class="product-card__sum">15 ₴</span>
+                        <span class="product-card__sum product-card__sum--old">30 ₴</span>
+                      </div>
+                    </div>
+        </div>
+        <a class="product__link" href="pages/shop_p2.html">Дивитися більше</a>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <h2 class="title blog__title">Блог</h2>
+        <p class="blog__text">
+          Новини б'юті-індустрії, секрети краси, огляди засобів
+        </p>
+        <div class="blog__items">
+
+          <div class="blog-card">
+            <a class="blog-card__link" href="blog-one.html">
+              <img class="blog-card__image" src="images/blog/blog1.jpg" alt="blog img">
+            </a>
+            <div class="blog-card__content">
+              <div class="blog-card__info blog-info">
+                <a class="blog-info__author" href="#">Милена В.</a>
+                <span class="blog-info__date">06 Апреля, 2021</span>
+              </div>
+              <a class="blog-card__link" href="blog-one.html">
+                <h3 class="blog-card__title">
+                  Найцікавіші б'юті-події тижня
+                </h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <a class="blog-card__link" href="blog-one.html">
+              <img class="blog-card__image" src="images/blog/blog2.jpg" alt="blog img">
+            </a>
+            <div class="blog-card__content">
+              <div class="blog-card__info blog-info">
+                <a class="blog-info__author" href="#">Света А.</a>
+                <span class="blog-info__date">30 Март, 2021</span>
+              </div>
+              <a class="blog-card__link" href="blog-one.html">
+                <h3 class="blog-card__title">
+                  Туш для вій: топ перевірених варіантів
+                </h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <a class="blog-card__link" href="blog-one.html">
+              <img class="blog-card__image" src="images/blog/blog3.jpg" alt="blog img">
+            </a>
+            <div class="blog-card__content">
+              <div class="blog-card__info blog-info">
+                <a class="blog-info__author" href="#">Инга</a>
+                <span class="blog-info__date">24 Марта, 2021</span>
+              </div>
+              <a class="blog-card__link" href="blog-one.html">
+                <h3 class="blog-card__title">
+                  Топ парфумерії на весну
+                </h3>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="partners">
+      <div class="container">
+        <ul class="partners__list">
+          <li class="partners__item">
+            <img class="partners__img" src="images/partners/1.jpg" alt="max factor">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="images/partners/2.jpg" alt="gucci">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="images/partners/3.webp" alt="tom ford">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="images/partners/4.webp" alt="nars">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="images/partners/5.webp" alt="buxom">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <address class="footer-top__column footer-top__column--main">
+          <a class="logo footer-top__logo" href="#">
+            <img class="logo__img" src="images/logo.png" alt="logo" style: height="160px" width="160px";>
+          </a>
+          <span class="footer-top__link">Україна, Київська область</span>
+          <a class="footer-top__link" href="mailto:shopmv23@gmail.com">
+            shopmv23@gmail.com
+          </a>
+          <a class="footer-top__link" href="tel:380986325727">
+            +3809863257272
+          </a>
+          <a class="footer-top__link" href="https://t.me/M_a_R_i_N_e_B_r_O">
+            <i class="fa fa-telegram" aria-hidden="true"></i> Є питання?
+          </a>
+
+          <ul class="footer-top__networks networks">
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="networks__item">
+              <a class="networks__link" href="#">
+                <svg class="networks__icon">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+
+        <div class="footer-top__column">
+          <h6 class="footer-top__title">Покупцеві</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Про магазин</a>
+              <a class="footer-top__link" href="#">Контакти</a>
+              <a class="footer-top__link" href="#">Оплата</a>
+              <a class="footer-top__link" href="#">Доставка</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__column">
+          <h6 class="footer-top__title">Аккаунт</h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__item">
+              <a class="footer-top__link" href="#">Мій акаунт</a>
+              <a class="footer-top__link" href="#">Мій кошик</a>
+              <a class="footer-top__link" href="#">Вибране</a>
+              <a class="footer-top__link" href="#">Реєстрація</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-top__column footer-top__column--sub">
+          <h6 class="footer-top__title">Підпишись на розсилку</h6>
+          <p class="footer-top__text">
+            Будь у курсі останніх новинок та акцій
+          </p>
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__input" type="email" placeholder="Email" required>
+            <button class="footer-top__btn" type="submit">Підписатись</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-bottom__copy">© 2023 ShopMV. Всі права захищені.</p>
+        <div class="footer-bottom__accept">
+          Ми приймаємо
+          <img class="footer-bottom__img" src="images/pay/mastercard.png" alt="ми приймаємо mastercard">
+          <img class="footer-bottom__img" src="images/pay/visa.png" alt="ми приймаємо visa">
+          <img class="footer-bottom__img" src="images/pay/paypal.png" alt="ми приймаємо paypal">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
