@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CosMix - Магазин косметики</title>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <title>❤️ShopMV</title>
+  <link rel="icon" href="images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -16,14 +17,14 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo header__logo" href="index.html">
-          <img class="logo__img" src="images/logo.svg" alt="logo">
+        <a class="logo header__logo" href="index.html" >
+          <img class="logo__img" src="images/logo.png" alt="logo" style: height="170px" width="170px";>
         </a>
 
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="index.html">Главная</a>
+              <a class="menu__link" href="index.html">Головна</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="shop.html">Каталог</a>
@@ -32,10 +33,10 @@
               <a class="menu__link" href="blog.html">Блог</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="about.html">О нас</a>
+              <a class="menu__link" href="about.html">Про нас</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="contacts.html">Контакты</a>
+              <a class="menu__link" href="contacts.html">Контакти</a>
             </li>
           </ul>
           <button type="button" class="menu__btn"><span></span></button>
@@ -43,21 +44,15 @@
 
         <div class="user-nav header__nav">
           <a class="user-nav__link" href="#">
-            <svg class="user-nav__icon">
-              <use xlink:href="images/sprite.svg#heart"></use>
-            </svg>
+            <i class="fa fa-heart" aria-hidden="true"></i>
             <span class="user-nav__num">4</span>
           </a>
           <a class="user-nav__link" href="#">
-            <svg class="user-nav__icon">
-              <use xlink:href="images/sprite.svg#cart"></use>
-            </svg>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             <span class="user-nav__num">1</span>
           </a>
           <a class="user-nav__link" href="login.html">
-            <svg class="user-nav__icon">
-              <use xlink:href="images/sprite.svg#user"></use>
-            </svg>
+            <i class="fa fa-user" aria-hidden="true"></i>
           </a>
         </div>
       </div>
@@ -69,31 +64,31 @@
     <div class="modal">
       <div class="container">
         <div class="modal__links">
-          <a class="modal__link modal__link--active" href="register.html">Регистрация</a>
-          <a class="modal__link" href="login.html">Вход</a>
+          <a class="modal__link modal__link--active" href="register.html">Реєстрація</a>
+          <a class="modal__link" href="login.html">Вхід</a>
         </div>
 
         <form class="modal__form" action="#">
           <label class="modal__label">
-            Введите email*
+            Введіть email*.
             <input class="modal__input" type="text" required>
           </label>
 
           <label class="modal__label">
-            Придумайте пароль*
+            Придумайте пароль*.
             <input class="modal__input" type="password" required>
           </label>
           
           <p class="modal__text">
-            Ваши личные данные будут использоваться искключительно для работы на этом веб-сайте, в том числе, для управления доступом к вашей учетной записи, а также других целей, описанных в нашей политике конфиденциальности.
+            Ваші особисті дані будуть використовуватися виключно для роботи на цьому веб-сайті, зокрема, для управління доступом до вашого облікового запису, а також для інших цілей, описаних у нашій політиці конфіденційності.
           </p>
 
           <label class="modal__label">
             <input type="checkbox">
-            Согласен с Условиями использования
+            Згоден з Умовами використання
           </label>
 
-          <button class="modal__btn" type="submit">Зарегистрироваться</button>
+          <button class="modal__btn" type="submit">Зареєструватися</button>
         </form>
       </div>
     </div>
@@ -105,49 +100,40 @@
       <div class="footer-top">
         <address class="footer-top__column footer-top__column--main">
           <a class="logo footer-top__logo" href="#">
-            <img class="logo__img" src="images/logo.svg" alt="logo">
+            <img class="logo__img" src="images/logo.png" alt="logo" style: height="160px" width="160px";>
           </a>
-          <span class="footer-top__link">Москва, Серебрянический пер., 9</span>
-          <a class="footer-top__link" href="mailto:Youremail@gmail.com">
-            mail@cosmix.ru
+          <span class="footer-top__link">Україна, Київська область</span>
+          <a class="footer-top__link" href="mailto:shopmv23@gmail.com">
+            shopmv23@gmail.com
           </a>
-          <a class="footer-top__link" href="tel:74991130422">
-            +74991130422
+          <a class="footer-top__link" href="tel:380986325727">
+            +3809863257272
+          </a>
+          <a class="footer-top__link" href="https://t.me/M_a_R_i_N_e_B_r_O">
+            <i class="fa fa-telegram" aria-hidden="true"></i> Є питання?
           </a>
 
           <ul class="footer-top__networks networks">
             <li class="networks__item">
               <a class="networks__link" href="#">
-                <svg class="networks__icon">
-                  <use xlink:href="images/sprite.svg#facebook"></use>
-                </svg>
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
               </a>
             </li>
 
             <li class="networks__item">
               <a class="networks__link" href="#">
-                <svg class="networks__icon">
-                  <use xlink:href="images/sprite.svg#vk"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="networks__item">
-              <a class="networks__link" href="#">
-                <svg class="networks__icon">
-                  <use xlink:href="images/sprite.svg#instagram"></use>
-                </svg>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
         </address>
 
         <div class="footer-top__column">
-          <h6 class="footer-top__title">Покупателю</h6>
+          <h6 class="footer-top__title">Покупцеві</h6>
           <ul class="footer-top__list">
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">О магазине</a>
-              <a class="footer-top__link" href="#">Контакты</a>
+              <a class="footer-top__link" href="#">Про магазин</a>
+              <a class="footer-top__link" href="#">Контакти</a>
               <a class="footer-top__link" href="#">Оплата</a>
               <a class="footer-top__link" href="#">Доставка</a>
             </li>
@@ -158,33 +144,33 @@
           <h6 class="footer-top__title">Аккаунт</h6>
           <ul class="footer-top__list">
             <li class="footer-top__item">
-              <a class="footer-top__link" href="#">Мой аккаунт</a>
-              <a class="footer-top__link" href="#">Моя корзина</a>
-              <a class="footer-top__link" href="#">Избранное</a>
-              <a class="footer-top__link" href="#">Регистрация</a>
+              <a class="footer-top__link" href="#">Мій акаунт</a>
+              <a class="footer-top__link" href="#">Мій кошик</a>
+              <a class="footer-top__link" href="#">Вибране</a>
+              <a class="footer-top__link" href="#">Реєстрація</a>
             </li>
           </ul>
         </div>
 
         <div class="footer-top__column footer-top__column--sub">
-          <h6 class="footer-top__title">Подпишись на рассылку</h6>
+          <h6 class="footer-top__title">Підпишись на розсилку</h6>
           <p class="footer-top__text">
-            Будь в курсе последних новинок и акций
+            Будь у курсі останніх новинок та акцій
           </p>
           <form class="footer-top__form" action="#">
             <input class="footer-top__input" type="email" placeholder="Email" required>
-            <button class="footer-top__btn" type="submit">Подписаться</button>
+            <button class="footer-top__btn" type="submit">Підписатись</button>
           </form>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p class="footer-bottom__copy">© 2021 cosmix.ru. Все права защищены.</p>
+        <p class="footer-bottom__copy">© 2023 ShopMV. Всі права захищені.</p>
         <div class="footer-bottom__accept">
-          Мы принимаем
-          <img class="footer-bottom__img" src="images/pay/mastercard.png" alt="мы принимаем mastercard">
-          <img class="footer-bottom__img" src="images/pay/visa.png" alt="мы принимаем visa">
-          <img class="footer-bottom__img" src="images/pay/paypal.png" alt="мы принимаем paypal">
+          Ми приймаємо
+          <img class="footer-bottom__img" src="images/pay/mastercard.png" alt="ми приймаємо mastercard">
+          <img class="footer-bottom__img" src="images/pay/visa.png" alt="ми приймаємо visa">
+          <img class="footer-bottom__img" src="images/pay/paypal.png" alt="ми приймаємо paypal">
         </div>
       </div>
 
